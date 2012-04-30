@@ -14,6 +14,8 @@ public class Main {
 		loop.run("estimateReachablesOutput", "estimateReachablesLoopOutput", K);
 		GlobalOr or = new GlobalOr();
 		or.run("estimateReachablesLoopOutput", "IterationOutput", K);
+		ResultReader reader = new ResultReader();
+		reader.run("IterationOutput", "ShouldStop");
 		//DisplayCount dc = new DisplayCount();
 		//dc.run("estimateOutput", "Result", K);
 	}
