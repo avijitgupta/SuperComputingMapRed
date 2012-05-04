@@ -33,7 +33,6 @@
 	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20/lib/guava-r09-jarjar.jar"/>
 	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20/lib/hadoop-fairscheduler-0.20.2-cdh3u3.jar"/>
 	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20/lib/hsqldb-1.8.0.10.jar"/>
-	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20/lib/hue-plugins-1.2.0-cdh3u3.jar"/>
 	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20/lib/jackson-core-asl-1.5.2.jar"/>
 	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20/lib/jackson-mapper-asl-1.5.2.jar"/>
 	<classpathentry kind="lib" path="/usr/lib/hadoop-0.20/lib/jasper-compiler-5.5.12.jar"/>

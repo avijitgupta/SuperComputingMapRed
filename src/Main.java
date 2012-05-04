@@ -7,7 +7,12 @@ public class Main {
 	 */
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		EstimateReachables reach = new EstimateReachables();
+		EstimateCount count = new EstimateCount();
+		int K = Integer.parseInt(args[0]);
+		count.run("estimateCountInput", "estimateArrayOutput", K);
+		DisplayCount disp = new DisplayCount();
+		disp.run("estimateArrayOutput", "estimateCountOutput", K);
+	/*	EstimateReachables reach = new EstimateReachables();
 		int K = 32;
 		reach.run("estimateReachablesInput", "estimateReachablesOutput", K);
 		EstimateReachablesLooper loop = new EstimateReachablesLooper();
@@ -15,7 +20,7 @@ public class Main {
 		GlobalOr or = new GlobalOr();
 		or.run("estimateReachablesLoopOutput", "IterationOutput", K);
 		ResultReader reader = new ResultReader();
-		reader.run("IterationOutput", "ShouldStop");
+		reader.run("IterationOutput", "ShouldStop");*/
 		//DisplayCount dc = new DisplayCount();
 		//dc.run("estimateOutput", "Result", K);
 	}

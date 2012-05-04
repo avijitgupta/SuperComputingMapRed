@@ -94,7 +94,7 @@ public class DisplayCount {
 				s+=(long)r;
 			}
 			
-			m = Math.floor(Math.pow(2, s/K) * (K/0.77351));
+			m = Math.floor(Math.pow(2, (s*1.0)/K) * (K/0.77351));
 			
 			Double result = new Double(m); 
 			output.collect(new Text(result.toString()), NullWritable.get());
