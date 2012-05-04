@@ -7,11 +7,17 @@ public class Main {
 	 */
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		EstimateCount count = new EstimateCount();
+		/*EstimateCount count = new EstimateCount();
 		int K = Integer.parseInt(args[0]);
 		count.run("estimateCountInput", "estimateArrayOutput", K);
 		DisplayCount disp = new DisplayCount();
 		disp.run("estimateArrayOutput", "estimateCountOutput", K);
+		*/
+		ActualCount actual = new ActualCount();
+		actual.run("estimateInput1", "UniqueS1CountInput");
+		CountUnique ct = new CountUnique();
+		ct.run("UniqueS1CountInput", "UniqueCountOutput");
+		
 	/*	EstimateReachables reach = new EstimateReachables();
 		int K = 32;
 		reach.run("estimateReachablesInput", "estimateReachablesOutput", K);
