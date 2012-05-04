@@ -7,17 +7,22 @@ public class Main {
 	 */
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-		/*EstimateCount count = new EstimateCount();
+		EstimateCount count = new EstimateCount();
 		int K = Integer.parseInt(args[0]);
-		count.run("estimateCountInput", "estimateArrayOutput", K);
+		String inputPath = args[1];
+		String outputPath = args[2];
+		count.run(inputPath, "estimateArrayOutput", K);
 		DisplayCount disp = new DisplayCount();
-		disp.run("estimateArrayOutput", "estimateCountOutput", K);
-		*/
-		ActualCount actual = new ActualCount();
-		actual.run("estimateInput1", "UniqueS1CountInput");
-		CountUnique ct = new CountUnique();
-		ct.run("UniqueS1CountInput", "UniqueCountOutput");
+		disp.run("estimateArrayOutput", outputPath, K);
 		
+		if(args.length == 4)
+		{
+			String actualCountPath = args[3];
+			ActualCount actual = new ActualCount();
+			actual.run(inputPath, "UniqueS1CountInput");
+			CountUnique ct = new CountUnique();
+			ct.run("UniqueS1CountInput", actualCountPath);
+		}
 	/*	EstimateReachables reach = new EstimateReachables();
 		int K = 32;
 		reach.run("estimateReachablesInput", "estimateReachablesOutput", K);
